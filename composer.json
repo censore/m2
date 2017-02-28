@@ -1,0 +1,19 @@
+{
+    "name": "censore/drive2",
+    "description": "test task",
+    "require": {
+        "php-curl-class/php-curl-class": "^7.2",
+        "joshcam/mysqli-database-class": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "JohnDou",
+            "email": "pomazkova@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Application\\": "application/"
+        }
+    }
+}
