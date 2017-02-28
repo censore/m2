@@ -23,7 +23,7 @@ class Parser
 
 	public function run(){
 		foreach (Loader::app()->config->application->steps as $step){
-			
+
 		}
 	}
 	public function __construct()

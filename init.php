@@ -13,5 +13,3 @@ $config = (object) (require dirname(__FILE__).'/config/config.php');
 $init = \Application\Loader::init($config);
 
 $init->getParser()->run();
-
-//print_r($init);
