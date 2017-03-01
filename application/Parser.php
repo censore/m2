@@ -9,10 +9,12 @@
 namespace Application;
 
 use Curl\Curl;
+use Curl\MultiCurl;
 
 class Parser
 {
 	public $curl;
+	public $curlMulti;
 	public $curlContent;
 
 
@@ -24,6 +26,7 @@ class Parser
 	public function __construct()
 	{
 		$this->curl = new Curl();
+		$this->curlMulti = new MultiCurl();
         $this->curlContent = new \stdClass();
 	}
 	public function __destruct()

@@ -46,13 +46,14 @@ class Cars implements ContentInterface
     public function getLinkByBrand($brand){ // : string
         return $this->getLinks()[array_search($brand, $this->getBrands())];
     }
-    public function getBrandByKey(int $key){
+    public function getBrandByKey( $key){
         return $this->getBrands()[$key];
     }
     public function getBrandByLink($link){
         return $this->getBrands()[array_search($link, $this->getLinks())];
     }
-    public function getLinkByKey($key){
+    public function getLinkByKey( $key){
         return $this->getLinks()[$key];
     }
+
 }

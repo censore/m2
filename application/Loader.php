@@ -7,10 +7,13 @@
  */
 namespace Application;
 
+use Vendor\Mysql\MysqliDb;
+
 class Loader {
 	public static $_inst;
 	public $config;
 	public $parser;
+	public $databse;
 	public static function init(\stdClass $config){
 		if(self::$_inst === null) self::$_inst = (new self())->setConfig($config)->setParser();
 		return self::$_inst;
@@ -20,6 +23,17 @@ class Loader {
 		if(self::$_inst === null) throw new \Exception('Builder didn\'t initialized');
 		return self::$_inst;
 	}
+
+	public function getDB(){
+		if($this->database === null) $this->databse = new MysqliDb(
+			$this->getConfig('db')->host,
+			$this->getConfig('db')->user,
+			$this->getConfig('db')->password,
+			$this->getConfig('db')->database
+		);
+		return $this->databse;
+	}
+
 	/**
 	 * @return mixed
 	 */

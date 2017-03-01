@@ -15,7 +15,7 @@ return [
             'log'=>new \Application\Parser\Log(),
 		],
 	],
-	'db'=>[
+	'db'=>(object)[
 		'host'=>'',
 		'database'=>'',
 		'user'=>'',
