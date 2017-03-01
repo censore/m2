@@ -18,6 +18,8 @@ class ComposerStaticInit117388abc7672b9d8c87f774f24e74b5
         ),
         'A' => 
         array (
+            'Application\\Parser\\Interfaces\\' => 30,
+            'Application\\Parser\\' => 19,
             'Application\\' => 12,
         ),
     );
@@ -26,6 +28,14 @@ class ComposerStaticInit117388abc7672b9d8c87f774f24e74b5
         'Curl\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-curl-class/php-curl-class/src/Curl',
+        ),
+        'Application\\Parser\\Interfaces\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/application/parser/interfaces',
+        ),
+        'Application\\Parser\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/application/parser',
         ),
         'Application\\' => 
         array (

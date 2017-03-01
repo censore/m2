@@ -7,5 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Curl\\' => array($vendorDir . '/php-curl-class/php-curl-class/src/Curl'),
+    'Application\\Parser\\Interfaces\\' => array($baseDir . '/application/parser/interfaces'),
+    'Application\\Parser\\' => array($baseDir . '/application/parser'),
     'Application\\' => array($baseDir . '/application'),
 );

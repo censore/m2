@@ -9,7 +9,10 @@ return [
 	 'application'=>(object) [
 		'imagesDirectory'=>'',
 		'steps'=>  [
-			'getCars', 'getModel', 'getLog'
+			'cars'=>new Application\Parser\Cars(),
+            'model'=>new \Application\Parser\Model(),
+            'pages',
+            'log'=>new \Application\Parser\Log(),
 		],
 	],
 	'db'=>[

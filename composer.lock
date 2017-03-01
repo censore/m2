@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8567fb84e75c89093df6124df135211c",
-    "content-hash": "236e175c205f9437e372d7255593202c",
+    "content-hash": "68d2420f9eed4b9aad27cc6023f0abd3",
     "packages": [
         {
             "name": "joshcam/mysqli-database-class",
-            "version": "dev-master",
+            "version": "v2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshcam/PHP-MySQLi-Database-Class.git",
-                "reference": "04cd1ab16e11ad805476155fb2772948de6e666f"
+                "reference": "0595c669e6883adaad1b3285b166fd9f58fd6acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshcam/PHP-MySQLi-Database-Class/zipball/04cd1ab16e11ad805476155fb2772948de6e666f",
-                "reference": "04cd1ab16e11ad805476155fb2772948de6e666f",
+                "url": "https://api.github.com/repos/joshcam/PHP-MySQLi-Database-Class/zipball/0595c669e6883adaad1b3285b166fd9f58fd6acd",
+                "reference": "0595c669e6883adaad1b3285b166fd9f58fd6acd",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +49,7 @@
                 }
             ],
             "description": "PHP MySQL Wrapper and object mapper which utilizes MySQLi and prepared statements",
-            "time": "2016-12-20 18:00:13"
+            "time": "2016-11-18T16:16:21+00:00"
         },
         {
             "name": "php-curl-class/php-curl-class",
@@ -107,15 +106,13 @@
                 "web service",
                 "xml"
             ],
-            "time": "2017-01-27 07:49:43"
+            "time": "2017-01-27T07:49:43+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "joshcam/mysqli-database-class": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -10,6 +10,6 @@ require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 $config = (object) (require dirname(__FILE__).'/config/config.php');
 
-$init = \Application\Loader::init($config);
+\Application\Loader::init($config)->getParser()->run();
 
-$init->getParser()->run();
+

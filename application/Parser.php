@@ -8,27 +8,23 @@
 
 namespace Application;
 
-use Application\Loader;
 use Curl\Curl;
-use Curl\MultiCurl;
-use Application\Parser\Cars;
-
 
 class Parser
 {
 	public $curl;
 	public $curlContent;
 
-	use Cars;
 
 	public function run(){
-		foreach (Loader::app()->config->application->steps as $step){
-
+		foreach (Loader::app()->config->application->steps as $stepName=>$step){
+            $this->curlContent->$stepName = $step->findContent($this);
 		}
 	}
 	public function __construct()
 	{
 		$this->curl = new Curl();
+        $this->curlContent = new \stdClass();
 	}
 	public function __destruct()
 	{

@@ -3,7 +3,7 @@
     "description": "test task",
     "require": {
         "php-curl-class/php-curl-class": "^7.2",
-        "joshcam/mysqli-database-class": "dev-master"
+        "joshcam/mysqli-database-class": "^2.7"
     },
     "authors": [
         {
@@ -13,7 +13,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Application\\": "application/"
+            "Application\\": "application/",
+            "Application\\Parser\\": "application/parser",
+            "Application\\Parser\\Interfaces\\": "application/parser/interfaces"
         }
     }
 }
