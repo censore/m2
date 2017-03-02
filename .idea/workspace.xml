@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2b22fa6d-274c-4d32-9f49-a303f6774893" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/joshcam/mysqli-database-class" afterPath="$PROJECT_DIR$/vendor/joshcam/mysqli-database-class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Loader.php" afterPath="$PROJECT_DIR$/application/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/BrandModel.php" afterPath="$PROJECT_DIR$/application/models/BrandModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/MainModel.php" afterPath="$PROJECT_DIR$/application/models/MainModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/parser/Cars.php" afterPath="$PROJECT_DIR$/application/parser/Cars.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +85,8 @@
       <file leaf-file-name="MainModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/MainModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="204">
+              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -101,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -124,9 +131,9 @@
         <entry file="file://$PROJECT_DIR$/application/parser/Cars.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="884">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="e#120#143#0#PHP" expanded="true" />
+                <marker date="1488445646146" expanded="true" signature="124:136" ph="..." />
               </folding>
             </state>
           </provider>
@@ -274,11 +281,6 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../111111.local" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\drive2\m2\application\parser" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
@@ -352,12 +354,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488291833977</updated>
       <workItem from="1488291836080" duration="7627000" />
-      <workItem from="1488353288979" duration="8198000" />
+      <workItem from="1488353288979" duration="8229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15825000" />
+    <option name="totallyTimeSpent" value="15856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -387,14 +389,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -474,7 +468,7 @@
         <state relative-caret-position="170">
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <element signature="e#120#143#0#PHP" expanded="true" />
+            <marker date="1488445646146" expanded="true" signature="124:136" ph="..." />
           </folding>
         </state>
       </provider>
@@ -558,7 +552,7 @@
         <state relative-caret-position="0">
           <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
           <folding>
-            <element signature="e#120#143#0#PHP" expanded="true" />
+            <marker date="1488445646146" expanded="true" signature="124:136" ph="..." />
           </folding>
         </state>
       </provider>
@@ -681,7 +675,7 @@
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -710,9 +704,9 @@
     <entry file="file://$PROJECT_DIR$/application/parser/Cars.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#120#143#0#PHP" expanded="true" />
+            <marker date="1488445646146" expanded="true" signature="124:136" ph="..." />
           </folding>
         </state>
       </provider>
@@ -763,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/MainModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="204">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding />
         </state>
       </provider>

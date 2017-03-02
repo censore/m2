@@ -14,18 +14,15 @@ use Application\Loader;
 abstract class MainModel
 {
 	public $connect;
+
 	protected $table;
 	protected $fields;
 	protected $join;
 
+    private $dataContainer=[];
 	public function __construct()
 	{
 		$this->connect = Loader::app()->getDB();
-	}
-	public function validate(){
-		foreach ($this->fields as $field){
-
-		}
 	}
 	public function withRelate(){
 		if($this->join === null) return;
@@ -34,9 +31,11 @@ abstract class MainModel
 		}
 	}
 	public function insert(array $data){
-		$this->connect->insert($this->table, $data);
+        $this->dataContainer = $data;
+		return $this->connect->insert($this->table, $data);
 	}
 	public function update(array $data, $where = null){
+        $this->dataContainer = $data;
 		if($where != null && is_array($where)) $this->where($where);
 		$this->connect->update($this->table, $data);
 	}

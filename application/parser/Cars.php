@@ -8,6 +8,7 @@
 
 namespace Application\Parser;
 
+use Application\Models\BrandModel;
 use Application\Parser;
 use Application\Parser\Interfaces\ContentInterface;
 
@@ -23,10 +24,22 @@ class Cars implements ContentInterface
 	public function findContent(Parser $parser){
 		$this->content = $parser->curl->get($this->cars_url, ['all'=>null]);
         preg_match_all($this->pattern, $this->content, $result);
-        $this->setLinks($result[1])->setBrands($result[3]);
+        $this->setLinks($result[1])->setBrands($result[3])->save();
         return $this;
 	}
 
+    public function save(){
+        $model = new BrandModel();
+        $total = count($this->getLinks());
+
+        foreach ($this->getLinks() as $id=>$link){
+            $result = $model->insert([
+                'brand_name'=>$this->getBrandByKey($id),
+                'brand_link'=>$link,
+            ]);
+            echo $result;
+        }
+    }
     public function getLinks(){
         return $this->cars->links;
     }
@@ -42,6 +55,7 @@ class Cars implements ContentInterface
 
     public function setBrands(array $brands){
         $this->cars->brands = $brands;
+        return $this;
     }
     public function getLinkByBrand($brand){ // : string
         return $this->getLinks()[array_search($brand, $this->getBrands())];

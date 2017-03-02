@@ -40,7 +40,7 @@ class Loader {
 
 	public function getConfig($item = null)
 	{
-		return ($item === null || is_array($item) || is_a($item)? $this->config : $this->config->$item);
+		return ($item === null || is_array($item) || is_object($item)? $this->config : $this->config->$item);
 	}
 
 	/**
