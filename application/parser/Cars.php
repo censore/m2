@@ -18,6 +18,7 @@ class Cars implements ContentInterface
     public $pattern = "/<a class=\"c-link\" href=\"([^\"]*)\"(.*)>(.*)<\/a>/siU";
 	public $content;
     public $cars;
+    public $lock = true;
     public function __construct(){
         $this->cars = new \stdClass();
     }
@@ -31,15 +32,16 @@ class Cars implements ContentInterface
     public function save(){
         $model = new BrandModel();
         $total = count($this->getLinks());
-
         foreach ($this->getLinks() as $id=>$link){
-            $result = $model->insert([
+        	$model->join = null;
+            $model->setLock()->insertIfNonExists(  [
                 'brand_name'=>$this->getBrandByKey($id),
                 'brand_link'=>$link,
             ]);
-            echo $result;
+	        $model->setUnlock();
         }
     }
+
     public function getLinks(){
         return $this->cars->links;
     }

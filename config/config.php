@@ -19,6 +19,6 @@ return [
 		'host'=>'localhost',
 		'database'=>'drive2',
 		'user'=>'root',
-		'password'=>'',
+		'password'=>'henkie',
 	]
 ];

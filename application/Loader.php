@@ -7,6 +7,8 @@
  */
 namespace Application;
 
+
+
 use Vendor\Mysql\MysqliDb;
 
 class Loader {

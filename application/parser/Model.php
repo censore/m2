@@ -9,6 +9,9 @@
 namespace Application\Parser;
 
 
+use Application\GetContent;
+use Application\Models\BrandModel;
+use Application\Models\ModelsModel;
 use Application\Parser;
 use Application\Parser\Interfaces\ContentInterface;
 use Curl\MultiCurl;
@@ -24,15 +27,19 @@ class Model implements ContentInterface {
         $this->cars_url = [];
     }
     public function findContent(Parser $parser){
-        foreach($parser->curlContent->cars->getLinks() as $car){
-            $result = $parser->curl->get($this->url . $car);
+    	$model = new BrandModel();
+    	$model->join = null;
+    	$model->setRandom();
+		$brand = (object)$model->select()[0];
 
-            preg_match_all($this->pattern, $result, $found);
+	    $found = GetContent::get($parser, $this->pattern, $this->url . $brand->brand_link);
 
-			$this->cars_url[$car] = new \stdClass();
+	    $this->cars_url[$brand->brand_link] = new \stdClass();
+	    $this->cars_url[$brand->brand_link]->model = $found[3];
+	    $this->cars_url[$brand->brand_link]->link = $found[1];
 
-	        $this->cars_url[$car]->model = $found[3];
-			$this->cars_url[$car]->link = $found[1];
-        }
+		$models = new ModelsModel();
+		
+
     }
 }

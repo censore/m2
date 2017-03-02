@@ -22,7 +22,7 @@
             "phpunit/phpunit": "*",
             "squizlabs/php_codesniffer": "*"
         },
-        "time": "2017-01-27T07:49:43+00:00",
+        "time": "2017-01-27 07:49:43",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -76,7 +76,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-11-18T16:16:21+00:00",
+        "time": "2016-11-18 16:16:21",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

@@ -12,6 +12,10 @@ class ComposerStaticInit117388abc7672b9d8c87f774f24e74b5
     );
 
     public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'Vendor\\Mysql\\' => 13,
+        ),
         'C' => 
         array (
             'Curl\\' => 5,
@@ -25,6 +29,10 @@ class ComposerStaticInit117388abc7672b9d8c87f774f24e74b5
     );
 
     public static $prefixDirsPsr4 = array (
+        'Vendor\\Mysql\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/joshcam/mysqli-database-class',
+        ),
         'Curl\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-curl-class/php-curl-class/src/Curl',

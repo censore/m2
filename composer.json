@@ -15,7 +15,8 @@
         "psr-4": {
             "Application\\": "application/",
             "Application\\Parser\\": "application/parser",
-            "Application\\Parser\\Interfaces\\": "application/parser/interfaces"
+            "Application\\Parser\\Interfaces\\": "application/parser/interfaces",
+            "Vendor\\Mysql\\": "vendor/joshcam/mysqli-database-class"
         }
     }
 }
