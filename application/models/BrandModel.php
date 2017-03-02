@@ -11,7 +11,7 @@ namespace Application\Models;
 
 class BrandModel extends MainModel
 {
-	public $table = '';
+	public $table = 'brand_model';
 	public $fields = [
 		'id',
 		'brand_name',

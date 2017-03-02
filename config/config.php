@@ -16,9 +16,9 @@ return [
 		],
 	],
 	'db'=>(object)[
-		'host'=>'',
-		'database'=>'',
-		'user'=>'',
+		'host'=>'localhost',
+		'database'=>'drive2',
+		'user'=>'root',
 		'password'=>'',
 	]
 ];
