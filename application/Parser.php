@@ -20,6 +20,7 @@ class Parser
 
 	public function run(){
 		foreach (Loader::app()->config->application->steps as $stepName=>$step){
+            echo $stepName.PHP_EOL;
             $this->curlContent->$stepName = $step->findContent($this);
 		}
 	}

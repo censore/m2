@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/application/GetContent.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/Loader.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/models/BrandModel.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/models/MainModel.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/models/TypeModelsModel.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/Cars.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/Factory.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/Log.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/Model.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/Pages.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/parser/interfaces/ContentInterface.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/init.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vendor/joshcam/mysqli-database-class/MysqliDb.php" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

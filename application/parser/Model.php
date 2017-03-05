@@ -10,17 +10,18 @@ namespace Application\Parser;
 
 
 use Application\GetContent;
+use Application\Loader;
 use Application\Models\BrandModel;
 use Application\Models\ModelsModel;
+use Application\Models\TypeModelsModel;
 use Application\Parser;
 use Application\Parser\Interfaces\ContentInterface;
 use Curl\MultiCurl;
+use Application\Parser\Nokogiri\Nokogiri;
 
 class Model implements ContentInterface {
     public $cars_url;
-    public $url = 'https://www.drive2.ru';
     public $models;
-	public $pattern = "/<a class=\"c-link\" href=\"([^\"]*)\"(.*)>(.*)<\/a>/siU";
 
     public function __construct(){
         $this->models = new \stdClass();
@@ -31,15 +32,25 @@ class Model implements ContentInterface {
     	$model->join = null;
     	$model->setRandom();
 		$brand = (object)$model->select()[0];
+        $dom = new Nokogiri( file_get_contents(Loader::app()->getConfig('application')->url . $brand->brand_link) );
+        $save = new TypeModelsModel();
+        $save->saveArray($brand->id,
+            $this->getCars(
+                $dom->get('a.c-link')->toArray(),
+                $brand
+            )
+        );
 
-	    $found = GetContent::get($parser, $this->pattern, $this->url . $brand->brand_link);
+    }
+    public function getCars($items, $brand){
+        $links = [];
+        foreach($items as $item){
+            $pos = stripos($item['href'], $brand->brand_link.'m');
+            if($pos!==false){
+                $links[] = $item;
+            }
+        }
 
-	    $this->cars_url[$brand->brand_link] = new \stdClass();
-	    $this->cars_url[$brand->brand_link]->model = $found[3];
-	    $this->cars_url[$brand->brand_link]->link = $found[1];
-
-		$models = new ModelsModel();
-		
-
+        return $links;
     }
 }

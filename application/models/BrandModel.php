@@ -20,4 +20,5 @@ class BrandModel extends MainModel
 	public $join = [
 		'models'=>['id', 'brand_id']
 	];
+
 }

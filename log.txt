@@ -1,0 +1,2 @@
+
+Fatal error: Call to a member function findContent() on a non-object in C:\OpenServer\domains\drive2\m2\application\Parser.php on line 23

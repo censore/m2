@@ -3,7 +3,8 @@
     "description": "test task",
     "require": {
         "php-curl-class/php-curl-class": "^7.2",
-        "joshcam/mysqli-database-class": "^2.7"
+        "joshcam/mysqli-database-class": "^2.7",
+        "sunra/php-simple-html-dom-parser": "1.5.2"
     },
     "authors": [
         {

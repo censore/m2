@@ -51,11 +51,22 @@ class ComposerStaticInit117388abc7672b9d8c87f774f24e74b5
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Sunra\\PhpSimple\\HtmlDomParser' => 
+            array (
+                0 => __DIR__ . '/..' . '/sunra/php-simple-html-dom-parser/Src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit117388abc7672b9d8c87f774f24e74b5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit117388abc7672b9d8c87f774f24e74b5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit117388abc7672b9d8c87f774f24e74b5::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

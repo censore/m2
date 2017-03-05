@@ -8,8 +8,11 @@
 
 require_once dirname(__FILE__) . '/vendor/autoload.php';
 
+use Application\Console;
+
 $config = (object) (require dirname(__FILE__).'/config/config.php');
 
-\Application\Loader::init($config)->getParser()->run();
+Console::command()->init(\Application\Loader::init($config)->getParser(), $argv);
 
+//->run();
 

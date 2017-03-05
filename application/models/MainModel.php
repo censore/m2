@@ -16,6 +16,10 @@ abstract class MainModel
 	public $connect;
 	public $limit_count = 1;
 	public $limit_offset = 1;
+    public $ignore = [
+        'brand_link'=>'/cars/',
+        'type_link'=>'/cars/',
+    ];
 
 	protected $table;
 	protected $fields;
@@ -56,16 +60,19 @@ abstract class MainModel
 	public function select($showFields = '*', $where = null){
 		if($where != null && is_array($where)) $this->where($where);
 		$this->withRelate();
+
 		$result = $this->connect->get($this->table, [$this->limit_count, $this->limit_offset], $showFields);
 		if($this->connect->getLastError()) throw new \Exception($this->connect->getLastError());
 		return $result;
 	}
 	public function setRandom(){
 		$this->connect->orderBy('RAND()');
+        return $this;
 	}
 	public function insertIfNonExists($data = [], $where = null, $replace = false){
 		if($where != null && is_array($where)) $this->where($where);
-		$result = $this->select('COUNT(*) as `total`', $data)[0];
+        $this->where($data);
+		$result =$this->connect->get($this->table, null, 'COUNT(*) as `total`')[0];
 		if($result['total'] == 0){
 			return $this->insert($data);
 		}

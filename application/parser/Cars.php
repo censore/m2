@@ -31,7 +31,6 @@ class Cars implements ContentInterface
 
     public function save(){
         $model = new BrandModel();
-        $total = count($this->getLinks());
         foreach ($this->getLinks() as $id=>$link){
         	$model->join = null;
             $model->setLock()->insertIfNonExists(  [
